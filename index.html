@@ -115,24 +115,40 @@ p {
 }
 
 .social a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.3);
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.25);
+  border: 3px solid rgba(0,180,255,0.9);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-decoration: none;
-  transition: .3s;
+
+  box-shadow:
+    0 0 12px rgba(0,180,255,0.45),
+    inset 0 0 10px rgba(255,255,255,0.45);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: 0.25s ease;
+}
+
+.social a img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.8;
 }
 
 .social a:hover {
-  background: #4fdcff;
-  color: #000;
-  box-shadow: 0 0 20px rgba(79,220,255,.8);
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 18px rgba(0,180,255,0.7),
+    inset 0 0 12px rgba(255,255,255,0.7);
 }
+
 
 /* ===== PLAYER ===== */
 .player {
@@ -180,12 +196,12 @@ p {
   <h1>YOUR NAME</h1>
   <p>YOUR BIO</p>
 
-  <div class="social">
-    <a href="#">▶</a>
-    <a href="#">♫</a>
-    <a href="#">■</a>
-    <a href="#">●</a>
-  </div>
+<div class="social">
+  <a href="#"><img src="yt.png"></a>
+  <a href="#"><img src="tiktok.png"></a>
+  <a href="#"><img src="roblox.png"></a>
+  <a href="#"><img src="spotify.png"></a>
+</div>
 
   <div class="player">
     <div class="progress">
@@ -221,6 +237,7 @@ setInterval(() => {
 
 </body>
 </html>
+
 
 
 
