@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #101014; /* ganti nanti */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 350px;
+            padding: 25px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 18px;
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: auto;
+            background: url("your-img-here.jpg") center/cover;
+            border: 2px solid #33cfff;
+        }
+
+        .social {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .social a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        .social a:hover {
+            background: #33cfff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="avatar"></div>
+        <h2 style="margin-top: 12px;">Nama Kamu</h2>
+        <p style="opacity: .7;">Tulisan deskripsi di sini nanti...</p>
+
+        <div class="social">
+            <a href="#">YT</a>
+            <a href="#">IG</a>
+            <a href="#">TT</a>
+            <a href="#">SP</a>
+        </div>
+    </div>
+
+</body>
+</html>
