@@ -27,15 +27,6 @@ body {
   overflow: hidden;
 }
 
-/* blur background only */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(8px) saturate(120%);
-  z-index: -1;
-}
-
 /* ===== CLOCK ===== */
 .clock {
   position: fixed;
@@ -228,6 +219,7 @@ setInterval(() => {
 
 </body>
 </html>
+
 
 
 
