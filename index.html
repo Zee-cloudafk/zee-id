@@ -13,15 +13,19 @@
             font-family: Arial, sans-serif;
         }
 
-        body {
+    body {
             height: 100vh;
-            background: #101014; /* ganti nanti */
+            margin: 0;
+            background:
+                radial-gradient(circle at top, rgba(0, 200, 255, 0.18), transparent 45%),
+                radial-gradient(circle at bottom, rgba(0, 120, 255, 0.12), transparent 50%),
+                linear-gradient(135deg, #070b10, #0b1a24, #05080c);
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
-
         .card {
             width: 350px;
             padding: 25px;
@@ -84,6 +88,7 @@
 
 </body>
 </html>
+
 
 
 
