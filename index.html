@@ -26,15 +26,33 @@
             justify-content: center;
             overflow: hidden;
         }
-        .card {
-            width: 350px;
-            padding: 25px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 18px;
-            backdrop-filter: blur(8px);
-            text-align: center;
-        }
+       .card {
+  width: 350px;
+  padding: 28px 26px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  text-align: center;
+
+  /* depth & glow halus */
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
+
+  transition: all 0.35s ease;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.6),
+    0 0 25px rgba(0,180,255,0.25);
+}
 
        .avatar {
   width: 110px;
@@ -89,6 +107,7 @@
 
 </body>
 </html>
+
 
 
 
