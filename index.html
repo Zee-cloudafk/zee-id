@@ -110,12 +110,21 @@ p {
   margin-top: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 22px;
 }
 
 .social a {
-  color: #ff4d4d; /* merah aesthetic */
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ff4d4d;
   text-decoration: none;
+
   transition: transform .25s ease, opacity .25s ease;
 }
 
@@ -124,10 +133,15 @@ p {
   opacity: 0.85;
 }
 
+/* 🔥 INI KUNCI */
 .social svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
+
   fill: currentColor;
+
+  display: block;     /* hilangkan baseline */
+  flex-shrink: 0;     /* cegah deform */
 }
 
 
@@ -246,6 +260,7 @@ setInterval(() => {
 
 </body>
 </html>
+
 
 
 
